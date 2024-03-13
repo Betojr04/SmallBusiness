@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <main>
+      {/* nav section */}
+      <nav className="nav-container">This is the navbar</nav>
+      {/* hero section */}
+      <section className="hero-section">
+        <h1>Your Fitness Journey Starts Here</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Don't wait any longer; seize the opportunity to become the best
+          version of yourself.
+          <br></br>Let's partner up today and start your fitness journey.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </section>
+      {/* call to action section */}
+      <section className="cta-section">Call to action section</section>
+    </main>
   );
-}
-
-export default App;
+};
