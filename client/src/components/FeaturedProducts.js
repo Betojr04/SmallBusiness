@@ -5,6 +5,7 @@ export const FeaturedProducts = () => {
   return (
     <section className="featured-section">
       <h2>Featured Products</h2>
+      <div className="featured-products">The the featured products section</div>
     </section>
   );
 };
