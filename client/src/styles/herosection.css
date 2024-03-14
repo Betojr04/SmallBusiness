@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url("../assets/heroimage.jpeg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; */
     width: 100%;
-    height: 300px;
     border: 1px red solid;
+    background-image: url("../assets/minimal.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 27rem;
 }
