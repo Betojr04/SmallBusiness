@@ -30,7 +30,7 @@ export const Nav = () => {
               <a href="/">Checkout</a>
             </li>
             <li>
-              <a href="/">Login</a>
+              <a href="/login">Login</a>
             </li>
             <li>
               <a href="/create-account">Create Account</a>

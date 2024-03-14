@@ -3,7 +3,7 @@ import "../styles/featuredproducts.css";
 import { FeaturedProdCard } from "./FeaturedProdCard";
 
 export const FeaturedProducts = () => {
-  const [product, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/featured-products")
@@ -16,9 +16,10 @@ export const FeaturedProducts = () => {
     <section className="featured-section">
       <h2>Featured Products</h2>
       <div className="featured-products">
-        {product.map((product) => (
-          <FeaturedProdCard key={product.id} product={product} />
-        ))}
+        {Array.isArray(products) &&
+          products.map((product) => (
+            <FeaturedProdCard key={product.id} product={product} />
+          ))}
       </div>
     </section>
   );

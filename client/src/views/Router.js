@@ -6,6 +6,7 @@ import { Footer } from "../components/Footer";
 
 const LandingPage = lazy(() => import("../views/LandingPage"));
 const CreateAccount = lazy(() => import("../views/CreateAccount"));
+const Login = lazy(() => import("../views/Login"));
 
 export const Router = () => {
   return (
@@ -15,6 +16,7 @@ export const Router = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/create-account" element={<CreateAccount />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </Suspense>
