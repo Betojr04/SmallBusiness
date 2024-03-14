@@ -5,6 +5,7 @@ import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 
 const LandingPage = lazy(() => import("../views/LandingPage"));
+const CreateAccount = lazy(() => import("../views/CreateAccount"));
 
 export const Router = () => {
   return (
@@ -13,6 +14,7 @@ export const Router = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/create-account" element={<CreateAccount />} />
         </Routes>
         <Footer />
       </Suspense>

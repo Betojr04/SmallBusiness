@@ -21,19 +21,19 @@ export const Nav = () => {
         {menu && (
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Cart</a>
+              <a href="/">Cart</a>
             </li>
             <li>
-              <a href="#">Checkout</a>
+              <a href="/">Checkout</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <a href="/">Login</a>
             </li>
             <li>
-              <a href="#">Create Account</a>
+              <a href="/create-account">Create Account</a>
             </li>
           </ul>
         )}
