@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Nav } from "../components/Nav";
+import { Footer } from "../components/Footer";
 
 const LandingPage = lazy(() => import("../views/LandingPage"));
 
@@ -13,6 +14,7 @@ export const Router = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
         </Routes>
+        <Footer />
       </Suspense>
     </BrowserRouter>
   );

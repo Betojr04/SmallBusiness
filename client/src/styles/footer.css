@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #f8f8f8;
+    /* Optional: set a background color */
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column a {
+    color: #333;
+    /* Set the link color */
+    text-decoration: none;
+    /* Remove the underline */
+    margin-bottom: 0.5em;
+    /* Add some space between the links */
+}
+
+.footer-column a:hover {
+    color: #666;
+    /* Change the link color when hovered */
+}

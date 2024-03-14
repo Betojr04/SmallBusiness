@@ -24,13 +24,16 @@ export const Nav = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Random</a>
+              <a href="#">Cart</a>
             </li>
             <li>
-              <a href="#">Random</a>
+              <a href="#">Checkout</a>
             </li>
             <li>
-              <a href="#">Random</a>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#">Create Account</a>
             </li>
           </ul>
         )}
