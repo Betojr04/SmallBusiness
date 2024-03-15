@@ -1,13 +1,16 @@
 import React from "react";
 import { TestimonialsList } from "./TestimonialsList";
+import "../styles/testimonial.css";
 
-const Testimonials = TestimonialsList.map((testimonial, index) => {
+export const Testimonials = () => {
   return (
-    <section key={index}>
-      <h2>{testimonial.name}</h2>
-      <p>{testimonial.text}</p>
+    <section className="testimonial-section">
+      {TestimonialsList.map((testimonial, index) => (
+        <div className="testimonial-card" key={index}>
+          <p>&ldquo;{testimonial.review}&rdquo;</p>
+          <h2>{testimonial.name}</h2>
+        </div>
+      ))}
     </section>
   );
-});
-
-export default Testimonials;
+};
