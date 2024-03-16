@@ -1,0 +1,47 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    margin: 10px;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    background-color: white;
+}
+
+.register-instead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.register-instead button {
+    margin: 10px;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    background-color: white;
+}
+
+.register-instead a {
+    text-decoration: none;
+    color: black;
+}
+
+.register_instead:hover {
+    background-color: lightgray;
+}
