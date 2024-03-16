@@ -10,12 +10,12 @@ flask-migrate = "*"
 flask-sqlalchemy = "*"
 flask-jwt-extended = "*"
 requests = "*"
+flask-bcrypt = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
-
 
 [scripts]
 start = "flask run"
