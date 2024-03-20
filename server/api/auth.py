@@ -40,7 +40,7 @@ def create_new_user():
     
     access_token = create_access_token(identity=email)
     
-    return jsonify({"msg": "User created successfully"}), 200
+    return jsonify({"msg": "New user created successfully"}), 200
     
     
     
