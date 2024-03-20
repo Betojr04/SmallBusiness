@@ -7,6 +7,9 @@ from flask_jwt_extended import create_access_token, JWTManager, jwt_required, ge
 
 auth = Blueprint('auth', __name__)
 
+"""
+ROUTE FOR REGISTERING A NEW USER
+"""
 @auth.route('/register', methods=['POST'])
 def create_new_user():
     data = request.get_json()
@@ -44,7 +47,9 @@ def create_new_user():
     
 
 
-
+""""
+ROUTE FOR LOGGING IN A USER
+"""
 @auth.route('/login', methods=['POST'])
 def login():
     data = request.get_json()

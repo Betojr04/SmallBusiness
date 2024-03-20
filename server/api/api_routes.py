@@ -19,4 +19,13 @@ def featured_products():
     except requests.exceptions.RequestException as e:
         return jsonify({'error': str(e)}), 500
     
-    
+
+@api.route('/categories', methods=['GET'])
+def fetch_all_categories():
+    try:
+        response = requests.get('https://fakestoreapi.com/products/categories')
+        response.raise_for_status()
+        
+        return jsonify(response.json())
+    except requests.exceptions.RequestException as e:
+        return jsonify({'error': str(e)}), 500
