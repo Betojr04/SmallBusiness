@@ -42,5 +42,32 @@ def create_new_user():
     
     return jsonify({"msg": "New user created successfully"}), 200
     
-    
-    
+
+
+
+@auth.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+        
+    email = data['email']
+    password = data['password']
+        
+    if not email:
+        return jsonify({"msg": "Email is required"}), 400
+        
+    if not password:
+        return jsonify({"msg": "Password is required"}), 400
+        
+    user = User.query.filter_by(email=email).first()
+        
+    if not user:
+        return jsonify({"msg": "Invalid email or password"}), 401
+        
+    hashed_password = hashlib.sha256(password.encode('utf-8')).hexdigest()
+        
+    if user.password != hashed_password:
+        return jsonify({"msg": "Invalid email or password"}), 401
+        
+    access_token = create_access_token(identity=email)
+        
+    return jsonify({"access_token": access_token}), 200
