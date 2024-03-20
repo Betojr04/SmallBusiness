@@ -38,6 +38,8 @@ def create_new_user():
     db.session.add(user)
     db.session.commit()
     
+    access_token = create_access_token(identity=email)
+    
     return jsonify({"msg": "User created successfully"}), 200
     
     
