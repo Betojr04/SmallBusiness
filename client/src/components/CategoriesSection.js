@@ -8,7 +8,7 @@ export const CategoriesSection = () => {
     fetch("http://127.0.0.1:5000/categories")
       .then((response) => response.json())
       .then((data) => setCategories(data))
-      .catch((error) => console.log(error)); // Move the catch block here
+      .catch((error) => console.log(error));
   }, []);
   return (
     <section className="categories-section">
